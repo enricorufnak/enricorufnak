@@ -26,7 +26,7 @@ flowchart LR
         P[PWA-Baukasten<br/>Manifest, Service Worker]
         L[Launch-Checkliste<br/>Security, SEO, Recht]
     end
-    K -- Pull Request --> R[(12 Projekt-Repos)]
+    K -- Pull Request --> R[(11 Projekt-Repos)]
     P -- Pull Request --> R
     L -- KI-Agent prüft --> R
     R --> CI[GitHub Actions<br/>Build, Links, Indexierung]
@@ -38,6 +38,10 @@ flowchart LR
 - **Ein Standard, viele Projekte:** Gemeinsame Bausteine kommen per Pull Request in jedes Projekt, ohne npm-Registry und ohne Token in der CI.
 - **Deployments, die sich selbst absichern:** Erst CI, Changelog, Qualität (axe, Lighthouse) und Kit-Stand prüfen, dann atomar umschalten, bei Fehlern automatisch zurück.
 - **KI-Agenten mit festen Regeln:** Aufgaben laufen als Tasks mit Pull-Request-Pflicht und Freigabe, die Agenten setzen um, ich entscheide.
+
+## Lesenswert
+
+📐 [engineering-notes](https://github.com/enricorufnak/engineering-notes): Case Studies aus meinen Projekten, jeweils Problem, Entscheidung und Ergebnis. Zuerst: [Deployments, die sich selbst absichern](https://github.com/enricorufnak/engineering-notes/blob/main/deploy-pipeline.md).
 
 ## Kontakt
 
