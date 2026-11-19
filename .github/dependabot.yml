@@ -1,0 +1,19 @@
+# Weekly version updates (launch check S13). Added by the daily repo guard; adjust freely, it is never overwritten.
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directories:
+      - "/"
+    schedule:
+      interval: weekly
+    assignees: ["enricorufnak"]
+    commit-message:
+      prefix: ci
+      include: scope
+    groups:
+      actions:
+        patterns: ["*"]
+    ignore:
+      # strip-pr-attribution.yml comes from the repo guard, the building blocks from launch-standards@v1; update them there.
+      - dependency-name: actions/github-script
+      - dependency-name: "enricorufnak/launch-standards*"
